@@ -1,15 +1,10 @@
 function dogaSort(inputArray) {
 	let sortedArray = [];
-	let finalArray = [];
 
 	inputArray.forEach((el) => (sortedArray[el] = el));
-	const iterator = Object.values(sortedArray);
-	for (const key of iterator) {
-		finalArray.push(key);
-	}
+	sortedArray = sortedArray.filter((item) => item !== null);
 
-	// console.log(finalArray);
-	return finalArray;
+	return sortedArray;
 }
 
 function dogaMax(inputArray) {
